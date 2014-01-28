@@ -1,0 +1,194 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head><link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="Styles/jquery-ui.css" />
+<script type="text/jscript" src="Scripts/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="Scripts/jquery-ui.js"></script>
+<link rel="stylesheet" href="Styles/style.css" />
+
+<script type="text/javascript">
+
+    function getParameterByName(name) {
+        var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+        return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+    }
+
+    $(document).ready(function () {
+
+        $('#PillarTextarea').val(getParameterByName('pillar'));
+       // $('#ManagerTextarea').val(getParameterByName('manager'));
+        //$('#TeamTextarea').val(getParameterByName('team'));
+        //$("#dialog").css("visibility", "hidden");
+      //  $("#dialog").attr("style", "visibility:hidden");
+        $('#mainDiv_Submit').click(function () {
+            var startDate = $("#from").val();
+            var endDate = $("#to").val();
+            alert("Your application is successfully Submitted from " + startDate + " to " + endDate);
+
+        });
+    });
+
+
+
+
+    jQuery(function ($) {
+        $("#from").datepicker({
+            defaultDate: "+1w",
+            changeMonth: true,
+            numberOfMonths: 3,
+            onClose: function (selectedDate) {
+                $("#to").datepicker("option", "minDate", selectedDate);
+            }
+        });
+        $("#to").datepicker({
+            defaultDate: "+1w",
+            changeMonth: true,
+            numberOfMonths: 3,
+            onClose: function (selectedDate) {
+                $("#from").datepicker("option", "maxDate", selectedDate);
+            }
+        });
+    });
+  </script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="keywords" content="carousel theme, free templates, image carousel, darkgray, pixelated background, template, CSS, HTML" /><meta name="description" content="Carousel Theme with darkgray background - free CSS template provided by template.com" /><link href="Styles/template_style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="Scripts/jquery-1-4-2.min.js"></script>  
+
+<script type="text/JavaScript" src="Scripts/jquery.mousewheel.js"></script> 
+
+<script type="text/javascript" src="Scripts/jquery.min.js"></script>
+<script type="text/javascript" src="Scripts/ddsmoothmenu.js">
+
+    /***********************************************
+   * This is a Portal Site for Job Shadow request.
+   * Crousel Effects have been used
+   ***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+    ddsmoothmenu.init({
+        mainmenuid: "template_menu", //menu DIV id
+        orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+        classname: 'ddsmoothmenu', //class added to menu's outer DIV
+        //customtheme: ["#1c5a80", "#18374a"],
+        contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+    })
+
+</script> 
+
+
+
+<title>
+
+</title></head>
+<body id="home">
+<form  id="Form1">
+
+
+<div class="main">
+<span id="userDetailsSpan" style="text-align:center;text-decoration:underline;text-transform:capitalize;font-size:larger;font-style:italic;color:white">Deepam  Ahuja</span>
+            
+
+</div>
+
+<div id="template_header_wrapper">
+	<div id="site_title"><h2 style="color : white">The Cloud Job Shadow</h2></div>
+     <div id="template_menu" class="ddsmoothmenu">
+     
+        <ul>
+            <li><a href="HomePage.html" class="selected">Home</a></li>
+           
+            <li>
+                <a href="">Profile</a>
+            </li>
+            <li><a href="http://wal-mart.com">Connect</a></li>
+        </ul>
+        <br style="clear: left" />
+    </div> <!-- end of template_menu -->
+    <div class="cleaner"></div>
+</div>	<!-- END of template_header_wrapper -->
+
+<div id="template_main">
+
+<h3>Job Shadow Request Details:</h3>
+
+<p>Pillar Selected:</p>
+<textarea  disabled="disabled"  style="overflow:auto" cols="25" rows="1" id="PillarTextarea"></textarea>
+<!--<p>Manager Selected:</p>
+<textarea  disabled="disabled" style="overflow:auto" cols="25" rows="1" id="ManagerTextarea"></textarea>
+<p>Team Selected:</p>
+<textarea  disabled="disabled" style="overflow:auto" cols="25" rows="1" id="TeamTextarea"></textarea>-->
+
+
+<p>Select Date Range:</p>
+<label for="from">From</label>
+<input name="mainDivfrom" type="text" id="from" />
+<label for="to">to</label>
+<input name="mainDivto" type="text" id="to" /> <br /><br /> 
+<p>Add Comments/Goal Expectation:</p>
+<textarea name="CommentsTextArea" id="mainDiv_CommentsTextArea" style="overflow:auto" cols="50" rows="7"></textarea>
+<br /> <br />
+
+
+<input type="submit" name="mainDivSubmit" value="Submit" id="mainDiv_Submit" />
+
+ 
+	    
+</div> <!-- END of template_main -->
+
+<div id="template_bottom_wrapper">
+    <div id="template_bottom">
+    	<div class="col one_third">
+        	<h4><span></span>Team Members:</h4>
+            <div class="bottom_box">
+                <ul class="footer_list">
+                   
+                    <li><a href="">Deepam Ahuja</a></li>
+                    
+                </ul>  
+			</div>
+        </div>
+        <div class="col one_third">
+        	<h4><span></span>Updates</h4>
+            <div class="bottom_box GrayFontColor">
+                <ul class="twitter_post">
+                    <li>@ 09/10/2013 - Now user are able to request mentors</li>
+                    <li>@ 09/11/2013 - Users can now link their Connect profile to the Job Shadow profile</li>
+                </ul>
+			</div>
+        </div>
+        <div class="col one_third no_margin_right">
+        	<h4><span></span>About The Hack</h4>
+            <div class="bottom_box">
+                
+                <div class="footer_social_button">
+                    <p><a>What: To make job shadow easier to employees.</a></p>
+					<p><a>Who: employees desiring to make a possible change in their careers</a></p>
+					<p><a>Why: this would be a Job retention tool where employees can try it out different areas before making a commitment that they indeed want to change their job position or pursue a different career path within Wal-mart.</a></p>
+
+
+                </div>
+            </div>
+        </div>
+        
+    	<div class="cleaner"></div>
+    </div> <!-- END of tempatemo_bottom -->
+</div> <!-- END of tempatemo_bottom_wrapper -->
+    <div id="dialog" title="Basic dialog" style="display:block;position:absolute;top:500px;left:100px;z-index:2;text-wrap:normal;height:100px;width:100px;border:1 px solid;background-color:white;color:red;visibility:hidden">
+        <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+    </div>
+<div id="template_footer_wrapper">
+    <div id="template_footer">
+		
+    </div> <!-- END of template_footer_wrapper -->
+</div> <!-- END of template_footer -->
+
+</form>
+</body>
+
+</html>

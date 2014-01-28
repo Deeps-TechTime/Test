@@ -1,0 +1,254 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="carousel theme, free templates, image carousel, darkgray, pixelated background, templatemo, CSS, HTML" />
+<meta name="description" content="Carousel Theme with darkgray background - free CSS template provided by templatemo.com" />
+<link href="Styles/Site.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="Scripts/jquery-1-4-2.min.js"></script> 
+
+    /***********************************************
+    * This is a Portal Site for Job Shadow request.
+	* Crousel Effects have been used
+    ***********************************************/
+
+
+<script type="text/javascript">
+
+    ddsmoothmenu.init({
+        mainmenuid: "template_menu", //menu DIV id
+        orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+        classname: 'ddsmoothmenu', //class added to menu's outer DIV
+        //customtheme: ["#1c5a80", "#18374a"],
+        contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+    })
+
+</script>
+
+<!-- Load the CloudCarousel JavaScript file -->
+<script type="text/JavaScript" src="Scripts/cloud-carousel.1.0.5.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+
+	// This initialises carousels on the container elements specified, in this case, carousel1.
+	$("#carousel1").CloudCarousel(
+		{
+			reflHeight: 40,
+			reflGap:2,
+			titleBox: $('#da-vinci-title'),
+			altBox: $('#da-vinci-alt'),
+			buttonLeft: $('#slider-left-but'),
+			buttonRight: $('#slider-right-but'),
+			yRadius:30,
+			xPos: 480,
+			yPos: 32,
+			speed:0.15
+		}
+	);
+    $('#template_slider').hide();
+
+});
+
+</script>
+
+
+
+<title>
+	Hack Days 3.0 - The Cloud Job Shadow
+</title></head>
+<body id="home">
+<form method="post" action="CreateAppointment.html" id="Form1">
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+</script>
+
+         
+    <script type="text/javascript" src="Scripts/jquery-ui.min.js"></script> 
+<script type="text/javascript" src="Scripts/showhide.js"></script>
+
+<script type="text/javascript">
+    function getManager() {
+        return $('#managerSelected option:selected').text();
+    }
+
+    function setPillar(pillar) {
+        $('#PillarTextarea').val(pillar);
+        $('#submitButton').removeAttr("disabled");
+    }
+
+    //function sessionPillar(pillar) { 
+    
+    //   // location.reload();
+    //    PageMethods.SetPillar(pillar);
+
+    //    //var pillarChosen = '';
+    //    var pillarChosen = pillar;
+
+   
+    ////var pillarChosen = PageMethods.SetPillar(pillar);
+    //    alert(pillarChosen);
+    //}
+
+    //function isSessionPillarBeenSet() {
+    //    alert('');	
+    //}
+function getPillar(){
+    return $('#PillarTextarea').val();
+}
+
+//function getTeam(){
+//    return $('#team option:selected').text();
+//}
+
+$(document).ready(function () {
+
+//    var pillarChosen = '';
+//    alert(pillarChosen);
+
+});
+
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#template_slider').show();
+        $('#submitButton').attr("disabled", "disabled");
+    });
+</script>
+    <div>
+        <span id="userDetailsSpan" style="text-align:center;text-decoration:underline;text-transform:capitalize;font-size:larger;font-style:italic;color:white">Deepam  Ahuja</span>
+    </div>
+
+<div id="template_header_wrapper">
+	<div id="site_title"><h2 style="color : white">The Cloud Job Shadow</h2></div>
+     <div id="template_menu" class="ddsmoothmenu">
+     
+        <ul>
+            <li><a href="homepage.html" class="selected">Home</a></li>
+            <li><a href="">Profile</a>
+            </li>
+            <li><a href="http://wal-mart.com">Connect</a></li>
+        </ul>
+        <br style="clear: left" />
+    </div> <!-- end of template_menu -->
+    <div class="cleaner"></div>
+</div>	<!-- END of template_header_wrapper -->
+<div id="template_slider">
+	<!-- This is the container for the carousel. -->
+    <div id = "carousel1" style="width:960px; height:280px;background:none;overflow:scroll; margin-top: 20px">   
+    
+    <!-- All images with class of "cloudcarousel" will be turned into carousel items -->
+        <!-- You can place links around these images -->
+        <a id="CarouselContent_pillarCpAa" rel="lightbox" onclick="setPillar(&quot;CPAndA&quot;)"><img class="cloudcarousel" src="images/slider/rsz_button_CPA2.png" alt="CSS Templates 1" title="Website Templates 1" /></a>
+        <a rel="lightbox" onclick="setPillar(&quot;AppDev&quot;)"><img class="cloudcarousel" src="images/slider/rsz_button_AppDev.png" alt="CSS Templates 2" title="Website Templates 2" /></a>
+        <a rel="lightbox" onclick="setPillar(&quot;Infrastructure&quot;)"><img class="cloudcarousel" src="images/slider/rsz_button_infrastructure_4.png" alt="CSS Templates 3" title="Website Templates 3" /></a>
+        <a rel="lightbox" onclick="setPillar(&quot;StrategicServices&quot;)"><img class="cloudcarousel" src="images/slider/rsz_button_strategic_services.png" alt="CSS Templates 4" title="Website Templates 4" /></a>
+        <a rel="lightbox" onclick="setPillar(&quot;Security&quot;)"><img class="cloudcarousel" src="images/slider/rsz_button_security.png" alt="Flash Templates 1" title="Flash Templates 1" /></a>
+        <a rel="lightbox" onclick="setPillar(&quot;EIM&quot;)"><img class="cloudcarousel" src="images/slider/rsz_button_EIM.png" alt="Flash Templates 2" title="Flash Templates 2" /></a>
+        <a rel="lightbox" onclick="setPillar(&quot;QAandOPS&quot;)"><img class="cloudcarousel" src="images/slider/rsz_button_QAandOPS.png" alt="Flash Templates 3" title="Flash Templates 3" /></a>
+    </div>
+    
+    <!-- Define left and right buttons. -->
+    <center>
+    <input id="slider-left-but" type="button" value="" />
+    <input id="slider-right-but" type="button" value="" />
+    </center>
+</div>
+<div id="template_main">
+
+    <div class="col one_third fp_services">
+    <h3>New Job Shadow Request</h3>
+    <ol>
+    <li>Pillar:</li>
+    <br />
+    <textarea  disabled="disabled"  style="overflow:auto" cols="25" rows="1" id="PillarTextarea"></textarea>
+    <br /><br />
+    <li>
+	<input type="button" id="submitButton" value="Create New Job Shadow" OnClick="parent.location='CreateAppointment.html?pillar='+getPillar()"/>
+    </li>
+    </ol>
+    </div>
+    <div class="col one_third fp_services">
+        <h3>Upcoming Job Shadows</h3>
+  		<ul class="template_list">
+            <a href=""><li class="flow">Infrastructure - Job Shadow 10/01/2013 @ 4:00 pm</li></a>
+            <a href=""><li class="flow nomr">CP&A - Job Shadow 10/07/2013 @ 2:00 pm</li></a>
+            <a href=""><li class="flow">Application Development - Job Shadow 11/01/2013 @ 4:00 pm</li></a>
+            <a href=""><li class="flow nomr"> Security - Job Shadow 12/01/2013 @ 12:30 pm</li></a>
+        </ul>
+		
+    </div>
+    <div class="col one_third no_margin_right fp_services">
+        
+        <h3>Job Shadows History</h3>
+		<ul class="template_list">
+            <a href=""><li class="flow">Quality Assurance - Job Shadow 07/01/2013 @ 12:30 pm</li></a>
+            <a href=""><li class="flow nomr">Enterprise Information Management- Job Shadow 03/01/2013 @ 4:30 pm</li></a>
+            <a href=""><li class="flow">Strategic Services - Job Shadow 02/01/2013 @ 9:00 am</li></a>
+            <a href=""><li class="flow nomr"> Operations - Job Shadow 05/01/2013 @ 3:30 pm</li></a>
+        </ul>
+		
+		
+    </div>
+    
+    <div class="cleaner"></div>
+   
+    	    
+</div> <!-- END of template_main -->
+
+<div id="template_bottom_wrapper">
+    <div id="template_bottom">
+    	<div class="col one_third">
+        	<h4><span></span>Team Members:</h4>
+            <div class="bottom_box">
+                <ul class="footer_list">
+                    <li>Deepam Ahuja</li>
+                   
+                </ul>  
+			</div>
+        </div>
+        <div class="col one_third">
+        	<h4><span></span>Updates</h4>
+            <div class="bottom_box GrayFontColor">
+                <ul class="twitter_post">
+                    <li>@ 09/10/2013 - Now user are able to request mentors</li>
+                    <li>@ 09/11/2013 - Users can now link their Connect profile to the Job Shadow profile</li>
+                </ul>
+			</div>
+        </div>
+        <div class="col one_third no_margin_right">
+        	<h4><span></span>About The Hack</h4>
+            <div class="bottom_box">
+                
+                <div class="footer_social_button">
+                    <p>What: To make job shadow easier to employees.</p>
+					<p>Who: employees desiring to make a possible change in their careers</p>
+					<p>Why: this would be a Job retention tool where employees can try it out different areas before making a commitment that they indeed want to change their job position or pursue a different career path within Wal-mart.</p>
+
+
+                </div>
+            </div>
+        </div>
+        
+    	<div class="cleaner"></div>
+    </div> <!-- END of tempatemo_bottom -->
+</div> <!-- END of tempatemo_bottom_wrapper -->
+
+<div id="template_footer_wrapper">
+    <div id="template_footer">
+	
+    </div> <!-- END of templatemo_footer_wrapper -->
+</div> <!-- END of templatemo_footer -->
+
+</form>
+</body>
+
+</html>
